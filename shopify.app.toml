@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "appTesto"
+client_id = "88e499ab042be6d9f2af4ee3a60a34a8"
+application_url = "https://monroe-organic-dogs-demo.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_discounts"
+
+[auth]
+redirect_urls = [
+  "https://monroe-organic-dogs-demo.trycloudflare.com/auth/callback",
+  "https://monroe-organic-dogs-demo.trycloudflare.com/auth/shopify/callback",
+  "https://monroe-organic-dogs-demo.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "andrioli-blizzard-wizard-store.myshopify.com"
